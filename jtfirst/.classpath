@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="properties"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE"/>
+	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/10.2.0/server/jdbc/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernate-3.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/asm.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/c3p0-0.9.1.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/hibernate-validator.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/jta.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="D:/jar/hibernatejar/xerces-2.6.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/jstl.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.aop-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.asm-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.aspects-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.beans-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.context.support-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.context-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.core-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.expression-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.instrument.tomcat-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.instrument-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.web.servlet-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/org.springframework.web-3.1.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/spring-core-3.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/spring-core-3.2.0.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/jar/spring jar (1)/spring jar/spring-core-3.2.0.RELEASE-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

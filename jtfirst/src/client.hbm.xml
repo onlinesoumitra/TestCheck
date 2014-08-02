@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.vmsi.mypackage.Employee" table="emp1000">
+		<id name="id">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="firstName"></property>
+		<property name="lastName"></property>
+
+	</class>
+
+	<class name="com.vmsi.composite.Client" table="emp1000">
+		<id name="propertyId">
+			<generator class="assigned"></generator>
+		</id>
+
+
+		<property name="propertyNum"></property>
+		<property name="propertyStreetNumber"></property>
+		<property name="propertyStreetName"></property>
+
+
+	</class>
+	<sql-query name="clientQuery">
+		<return alias="client" class="com.vmsi.mypackage.Employee" />
+		select * from emp1000
+	</sql-query>
+
+	<sql-query name="clientQuery1">
+		<return alias="client" class="com.vmsi.composite.Client" />
+select
+		(dum.ClientsFileNumber + 1) as propertyId,
+		dum.ClientsFileNumber as propertyNum,
+		'RESW' as "client-code",
+		'RESMAE' as clientDealName,
+		'SF' as propertyType,
+
+		InstrumentNumber as investorCode,
+		StreetNumber as propertyStreetNumber,
+		StreetName as propertyStreetName,
+		Name as propertyCity,
+		State as propertyState,
+		Zip as propertyZip,
+		PrimaryBuyerSellerName as borrowerName,
+
+		SalesPrice as "pre-fcValue",
+		LoanAmount as assetValue,
+		val as propertyStatus,
+		'0' as yearBuilt,
+		'0' as area,
+		'0' as noofRooms,
+		'0' as noofBedRooms,
+		'0' as noofFullBaths,
+		'0' as noofHalfBaths,
+		'0' as garageSize,
+		'Referral Broker' as listingAgentType,
+		'NA' as Name,
+		'NA' Email,
+		'0' as priorityFlag,
+		'1' as OccupancyStatus,
+		'1' as IsInvestorBilling,
+		'1' as LienPosition,
+		'Yes' as InspectionRequired,
+		'\\PTP-A4B-364\Adjuster Report\' AdjustorLinkReport,
+		dum.FileNumber as ReswarefileNo,
+		spli as SplInstruction,
+		Buyer1 as Name,
+		EmailPrimary as Email,
+		Phone as PhoneNo1,
+		Buyer2 as Name,
+		EmailSecondary as Email,
+		Phone as PhoneNo1 from DUMMY_VMSI dum inner join DUMMY_VMSI_CHILD dumChild 
+		on dum.CLIENTSFILENUMBER=dumChild.CLIENTSFILENUMBER
+		where 
+		
+		dum.ClientsFileNumber=:propertyNum and 
+		dumChild.CUSTOMFIELDID1 =:CUSTOMFIELDID1 and dumChild.CUSTOMFIELD2= :CUSTOMFIELDID2
+		and dumChild.OFFICEID=:OfficeID and dumChild.FILENUMBER=:FileNumber and dumChild.BUYERSELLERTYPEID=:BuyerSellerTypeID
+		and dumChild.SEQUENCENUMBER=:SequenceNumber 
+	</sql-query>
+
+</hibernate-mapping>
